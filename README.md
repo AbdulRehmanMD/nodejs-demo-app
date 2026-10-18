@@ -85,3 +85,35 @@ Screenshots of successful pipeline runs and application output are included in t
 ## 8. Conclusion
 
 This project demonstrates CI/CD concepts by automating testing, Docker image creation, and image publishing using Jenkins and GitHub Actions. It provides practical experience with version control, containerization, and automated delivery workflows.
+
+
+## Run with Docker Compose
+
+### Prerequisites
+- Docker Desktop
+- Docker Compose
+
+### Start the application
+
+Run the following command from the project directory:
+
+```bash
+docker compose up -d
+```
+
+Open http://localhost:3001 in your browser.
+
+### Check the running container
+
+```bash
+docker compose ps
+```
+
+### Stop the application
+
+```bash
+docker compose down
+```
+
+The application uses the Docker Hub image
+`abdulrehmanmd/nodejs-demo-app:latest`.
