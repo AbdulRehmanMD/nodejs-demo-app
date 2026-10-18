@@ -1,0 +1,8 @@
+
+services:
+  app:
+    image: abdulrehmanmd/nodejs-demo-app:latest
+    container_name: nodejs-demo-compose
+    ports:
+      - "3001:3000"
+    restart: unless-stopped
